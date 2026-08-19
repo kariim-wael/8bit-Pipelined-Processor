@@ -177,17 +177,6 @@ The Control Unit is implemented as a 2-state FSM to support variable-length (1-b
 ├── LICENSE
 └── README.md
 ```
-
-<br />
-### Synthesis (Synopsys Design Compiler)
-
-```tcl
-cd "ASIC flow/SYNTHESIS/scripts"
-dc_shell-t -f syn_script.tcl
-```
-
-Reports (area, power, setup, hold, clocks, constraint violations) are written to `ASIC flow/SYNTHESIS/reports/`.
-
 <br />
 
 ## ✅ Verification
