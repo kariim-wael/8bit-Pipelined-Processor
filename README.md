@@ -1,6 +1,6 @@
 <div align="center">
 
-  ### 🎓 ELC3030 — Advanced Microprocessor — Cairo University, Fall 2025
+  ### 🎓 ELC3030 — Advanced Microprocessor — Cairo University
 
 </div>
 
@@ -54,14 +54,14 @@ The design implements the complete RISC-like ISA specified in the course project
 
 ## 👥 Team Members
 
-| BN | Sec | ID | Name |
-|----|-----|------|------|
-| 9  | 3   | 9230589 | Ali Yasser Ali Sayed |
-| 5  | 3   | 9230566 | Abdullah Nasser Hammada Mostafa |
-| 30 | 3   | 9230700 | Moamen Salah Abdelmoneam Abdelkader |
-| 27 | 3   | 9230675 | Karim Wael Mohamed Gomaa |
-| 31 | 3   | 9230703 | Martin Ashraf Rgaey Fahim |
-| 29 | 3   | 9230681 | Kyrillos Aroukhla Fathy Mosaad |
+| Name |
+|------|
+| Ali Yasser Ali Sayed |
+| Abdullah Nasser Hammada Mostafa |
+| Moamen Salah Abdelmoneam Abdelkader |
+| Karim Wael Mohamed Gomaa |
+| Martin Ashraf Rgaey Fahim |
+| Keroloss Arwehla Fathy Mosaad |
 
 <br />
 
@@ -177,37 +177,6 @@ The Control Unit is implemented as a 2-state FSM to support variable-length (1-b
 ├── LICENSE
 └── README.md
 ```
-
-<br />
-
-## ▶ How to Run
-
-### Simulation (ModelSim / QuestaSim)
-
-```bash
-# Compile all RTL and the testbench
-vlog -sv RTL/*.v TB/top_tb.v
-
-# Run the full regression
-vsim -c work.Processor_TB -do "run -all; quit"
-
-# Or launch the GUI to inspect waveforms
-vsim work.Processor_TB
-add wave -r /*
-run -all
-```
-
-Each test program under `TB/` (`program1_format_A.txt` → `program6_hazard.txt`) is loaded by the testbench to exercise a specific instruction format, branching, interrupt handling, or the load-use hazard path — see `Documentation/Report.pdf` §11 for the full expected-behavior breakdown of each.
-
-### Synthesis (Synopsys Design Compiler)
-
-```tcl
-cd "ASIC flow/SYNTHESIS/scripts"
-dc_shell-t -f syn_script.tcl
-```
-
-Reports (area, power, setup, hold, clocks, constraint violations) are written to `ASIC flow/SYNTHESIS/reports/`.
-
 <br />
 
 ## ✅ Verification
