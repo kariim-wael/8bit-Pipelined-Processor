@@ -179,26 +179,6 @@ The Control Unit is implemented as a 2-state FSM to support variable-length (1-b
 ```
 
 <br />
-
-## ▶ How to Run
-
-### Simulation (ModelSim / QuestaSim)
-
-```bash
-# Compile all RTL and the testbench
-vlog -sv RTL/*.v TB/top_tb.v
-
-# Run the full regression
-vsim -c work.Processor_TB -do "run -all; quit"
-
-# Or launch the GUI to inspect waveforms
-vsim work.Processor_TB
-add wave -r /*
-run -all
-```
-
-Each test program under `TB/` (`program1_format_A.txt` → `program6_hazard.txt`) is loaded by the testbench to exercise a specific instruction format, branching, interrupt handling, or the load-use hazard path — see `Documentation/Report.pdf` §11 for the full expected-behavior breakdown of each.
-
 ### Synthesis (Synopsys Design Compiler)
 
 ```tcl
