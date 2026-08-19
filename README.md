@@ -54,14 +54,14 @@ The design implements the complete RISC-like ISA specified in the course project
 
 ## 👥 Team Members
 
-| BN | Sec | ID | Name |
-|----|-----|------|------|
-| 9  | 3   | 9230589 | Ali Yasser Ali Sayed |
-| 5  | 3   | 9230566 | Abdullah Nasser Hammada Mostafa |
-| 30 | 3   | 9230700 | Moamen Salah Abdelmoneam Abdelkader |
-| 27 | 3   | 9230675 | Karim Wael Mohamed Gomaa |
-| 31 | 3   | 9230703 | Martin Ashraf Rgaey Fahim |
-| 29 | 3   | 9230681 | Kyrillos Aroukhla Fathy Mosaad |
+| Name |
+|------|
+| Ali Yasser Ali Sayed |
+| Abdullah Nasser Hammada Mostafa |
+| Moamen Salah Abdelmoneam Abdelkader |
+| Karim Wael Mohamed Gomaa |
+| Martin Ashraf Rgaey Fahim |
+| Keroloss Arwehla Fathy Mosaad |
 
 <br />
 
