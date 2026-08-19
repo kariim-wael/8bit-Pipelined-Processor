@@ -1,0 +1,21 @@
+# Simulation artifacts
+work/
+transcript
+vsim.wlf
+*.wlf
+*.vstf
+modelsim.ini
+*.log
+
+# Synthesis / DC artifacts (keep committed reports under ASIC flow/SYNTHESIS/reports if desired)
+*.svf
+*.mr
+command.log
+filenames.log
+*.syn
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/

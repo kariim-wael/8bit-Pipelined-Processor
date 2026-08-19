@@ -1,0 +1,14 @@
+00000001 // Addr 0: Main code starts here
+01111100 // Addr 1: IN R0 (Read Input Port to R0)
+01111101 // Addr 2: IN R1 (Read Input Port to R1)
+01111110 // Addr 3: IN R2 (Read Input Port to R2)
+00000000 // Addr 4: NOP (No Operation)
+01111000 // Addr 5: OUT R0 (Write R0 to Output Port)
+01111001 // Addr 6: OUT R1 (Write R1 to Output Port)
+11100001 // Addr 7: STI R1, R0 (Indirect Store: M[R0] <- R1)
+11001011 // Addr 8: STD R3 (Direct Store: M[ea] <- R3) - Write R3 to memory address ea
+00000011 // Addr 9: Address = 3 (Effective Address ea = 3 -> M[3] <- R3)
+11000000 // Addr 10: LDM R0 (Load Immediate: R0 <- Imm)
+00111111 // Addr 11: Value = 63 (Immediate Value = 63 -> R0 = 63)
+11000100 // Addr 12: LDD R0 (Direct Load: R0 <- M[ea])
+00000011 // Addr 13: Address = 3 (Effective Address ea = 3 -> R0 = M[3])

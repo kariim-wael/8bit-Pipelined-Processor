@@ -1,0 +1,10 @@
+00000001 // Addr 0: Main code starts here
+01111100 // Addr 1: IN R0 (input: 7)
+01111101 // Addr 2: IN R1 (input: 4)
+01111110 // Addr 3: IN R2 (input: 77)
+00000000 // Addr 4: NOP
+01111000 // Addr 5: OUT R0
+01111001 // Addr 6: OUT R1
+11100100 // Addr 7: STI [R1], R0 (M[4] = 7)
+11010110 // Addr 8: LDI R2, [R1] (R2 = M[4] = 7)
+00100110 // Addr 9: ADD R1, R2 (R1 = 4 + 7 = 11)

@@ -1,0 +1,12 @@
+00000001 // Addr 0: Main Code Start
+01111101 // Addr 1: IN R1 // Load R1 with input value (e.g., 5) - Test Input Port
+01111100 // Addr 2: IN R0 // Load R0 with input value (e.g., 3) - Test Input Port
+01111110 // Addr 3: IN R2 // Load R2 with input value (e.g., 2) - Test Input Port
+00000000 // Addr 4: NOP // No Operation (Wait / Bubble)
+01111001 // Addr 5: OUT R1 // Show R1 on Output Port -> Verify Input was successful
+01111000 // Addr 6: OUT R0 // Show R0 on Output Port -> Verify Input was successful
+01110001 // Addr 7: PUSH R1 // Save R1 to Stack (SP Decrements)
+10000110 // Addr 8: NEG R2 // Test 2's Comp & Overflow Flag
+10000010 // Addr 9: NOT R2 // Test 1's Comp (Logic)
+00010010 // Addr 10: MOV R0, R2 // Overwrite R0 with new data
+01110100 // Addr 11: POP R0 // Restore original value from Stack to R0 (SP Increments)

@@ -1,0 +1,16 @@
+00000001 // START
+01111100 // IN R0 (Input port -> R0: 3)
+01111101 // IN R1 (Input port -> R1: 12)
+01111110 // IN R2 (Input port -> R2: 15)
+00000000 // NOP (No Operation)
+01111000 // OUT R0 (Output port <- R0)
+01111001 // OUT R1 (Output port <- R1)
+00100001 // ADD R0, R1 (R0 = R0 + R1) -> zero flag will = 0
+10010010 // JZ R2 (Jump to address in R2 if Zero Flag = 1) -> expect not jump
+10110001 // JMP R1 (Unconditional Jump to address in R1: 12)
+00000000 // NOP (No Operation)
+00000000 // NOP (No Operation)
+01101000 // SETC (Set Carry Flag = 1) -> instruction JMP R1 jump here
+00000000 // NOP (No Operation)
+00000000 // NOP (No Operation)
+00110001 // SUB R0, R1 (R0 = R0 - R1) -> instruction JZ R2 jump here (expect not)

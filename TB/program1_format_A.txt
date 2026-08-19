@@ -1,0 +1,17 @@
+00000001 // Addr 0: Main Code Start
+01111101 // Addr 1: IN R1 // Load R1 with input value (e.g., 5) -> Test Input Port
+01111100 // Addr 2: IN R0 // Load R0 with input value (e.g., 3) -> Test Input Port
+01111110 // Addr 3: IN R2 // Load R2 with input value (e.g., 2) -> Test Input Port
+00000000 // Addr 4: NOP // No Operation (Wait / Bubble)
+01111001 // Addr 5: OUT R1 // Show R1 on Output Port -> Verify Input was successful
+01111000 // Addr 6: OUT R0 // Show R0 on Output Port -> Verify Input was successful
+00100100 // Addr 7: ADD R1, R0 // R1 = R1 + R0. (Update R1) - Test ALU Add
+00100001 // Addr 8: ADD R0, R1 // R0 = R0 + R1. (Uses NEW R1) - Test Forwarding Unit (RAW Hazard)
+00111000 // Addr 9: SUB R2, R0 // R2 = R2 - R0. - Test ALU Sub & Negative Flag -> Test Forwarding Unit (RAW Hazard)
+10001010 // Addr 10: INC R2 // R2 = R2 + 1. Test Increment
+10001101 // Addr 11: DEC R1 // R1 = R1 - 1. Test Decrement
+01010100 // Addr 12: OR R1, R0 // R1 = R1 | R0. -> Test Logic Unit
+01101000 // Addr 13: SETC // Set Carry Flag = 1. Test Status Register Update
+01101100 // Addr 14: CLRC // Clear Carry Flag = 0. -> Test Status Register Update
+00010010 // Addr 15: MOV R0, R2 // R0 = R2. Test Register Transfer (Reg to Reg)
+01100001 // Addr 16: RLC R1 // Rotate Left R1 through Carry. Test Shifter Unit

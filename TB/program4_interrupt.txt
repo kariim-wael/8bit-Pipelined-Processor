@@ -1,0 +1,12 @@
+00000010 // Addr 0: Main code starts here
+00001000 // Addr 1: ISR start (Jumped to when interrupt occurs to addr [8])
+01111110 // IN R2 (Read to R2)
+01111100 // IN R0 (Read to R0)
+01111101 // IN R1 (Read to R1)
+00000000 // NOP
+00000000 // NOP
+00000000 // NOP
+01111101 // IN R1 (Update R1), Jump here
+01111100 // IN R0 (Update R0)
+01111110 // IN R2 (Update R2)
+10111100 // RTI (Return to Main addr [2])
