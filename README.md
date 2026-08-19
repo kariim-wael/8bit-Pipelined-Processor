@@ -1,6 +1,6 @@
 <div align="center">
 
-  ### 🎓 ELC3030 — Advanced Microprocessor — Cairo University, Fall 2025
+  ### 🎓 ELC3030 — Advanced Microprocessor — Cairo University
 
 </div>
 
